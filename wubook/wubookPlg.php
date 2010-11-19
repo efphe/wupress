@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Plugin Name: WuBook Online Reception Plugin
  * Plugin URI: http://en.wubook.net/
  * Description: Insert an online booking system for hotel and bed and breakfast (aka online reception)
@@ -9,7 +9,6 @@
  * License: BSD
  * License owner: WuBook Srl, http://wubook.net/
  */
-/**
 
 
 // Hook for adding admin menus
