@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: WuBook Online Reception Plugin
+ * Plugin Name: WuBook widget
  * Plugin URI: http://en.wubook.net/
  * Description: Insert an online booking system for hotel and bed and breakfast (aka online reception)
  * Version: 1.0
