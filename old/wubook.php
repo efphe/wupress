@@ -3,12 +3,11 @@
  * Plugin Name: WuBook plugin
  * Plugin URI: http://en.wubook.net/
  * Description: Insert an online booking system for hotel and bed and breakfast (aka online reception)
- * Version: 2.0
- * Author: Pranjal Srivastava (WuBook Srl), Eugenio Palumbo, Federico Tomassini
+ * Version: 1.0
+ * Author: Pranjal Srivastava
  * Author URI: http://wubook.net/
  * License: BSD
  * License owner: WuBook Srl, http://wubook.net/
- * See plugin documentation here: http://wubook.net/booking-widget/, http://en.wubook.net/booking-widget/
  */
 
 // Hook for adding admin menus
@@ -266,7 +265,6 @@ class reception_Widget extends WP_Widget {
 	echo "<script>
 		wbLoadInit(".$icode.",".$avoiddates.",".$avoiddeletion.",".$avoidmail.",'".$deflang."','".$layout."',".$wborcss.",".$horizontal.",".$minimal.");
 		</script>";
-        echo $after_widget; 
 	}
     /*
 	 * Update the widget settings.
