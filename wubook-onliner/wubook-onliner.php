@@ -308,8 +308,7 @@ function wubook_settings() {
 		wp_enqueue_style(  'wp-color-picker' );
 		wp_enqueue_script( 'wp-color-picker' );
 	    ?>
-	    <?php /* <script src="https://wubook.net/js/wbbook.jgz"></script> */ ?>
-	    <script src="http://en.wubook.net/rjs/wbbook.jgz"></script>
+	    <script src="https://wubook.net/js/wbbook.jgz"></script>
 	    <script>
 		jQuery(document).ready(function($){
 		    $('.colorfield').wpColorPicker();
