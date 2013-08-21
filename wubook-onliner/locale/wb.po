@@ -1,0 +1,134 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WuBook Onliner Widget\n"
+"Report-Msgid-Bugs-To: steel@wubook.net\n"
+"POT-Creation-Date: 2013-08-13\n"
+"Last-Translator: Eugenio Palumbo <www.itasolution.it>\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "WuBook Settings"
+msgstr ""
+
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+msgid "Lodging code is not valid!"
+msgstr ""
+
+msgid "Width value is not valid!"
+msgstr ""
+
+msgid "Height value is not valid!"
+msgstr ""
+
+msgid "WuBook Online Reception Settings"
+msgstr ""
+
+msgid "Lodging code: "
+msgstr ""
+
+msgid "You can retreive it in the WuBook extranet panel."
+msgstr ""
+
+msgid "Width: "
+msgstr ""
+
+msgid "The width of the widget (integer). Default value is 200."
+msgstr ""
+
+msgid "Height: "
+msgstr ""
+
+msgid "The heigth of the widget (integer). Default value is auto."
+msgstr ""
+
+msgid "e-Mail: "
+msgstr ""
+
+msgid "Show the feedback form in the widget (0 or 1). Default is 1."
+msgstr ""
+
+msgid "Cancellation: "
+msgstr ""
+
+msgid "Show the cancellation form in the widget (0 or 1). Default is 1."
+msgstr ""
+
+msgid "Language: "
+msgstr ""
+
+msgid "Autodetect"
+msgstr ""
+
+msgid "The language, no param means auto-detect."
+msgstr ""
+
+msgid "Dates: "
+msgstr ""
+
+msgid "Dates selection (dates selection is not mandatory to open Online Reception), 0 or 1. Default is 1."
+msgstr ""
+
+msgid "Failback language: "
+msgstr ""
+
+msgid "Just in case language is not specified and server cannot detect the language: this language will be used."
+msgstr ""
+
+msgid "Background color: "
+msgstr ""
+
+msgid "Background color. Default is #E7F2E7."
+msgstr ""
+
+msgid "Font color: "
+msgstr ""
+
+msgid "The fonts color. Default is #003D18."
+msgstr ""
+
+msgid "Cards: "
+msgstr ""
+
+msgid "Show cards icons (0 or 1). Default is 1."
+msgstr ""
+
+msgid "Google integration: "
+msgstr ""
+
+msgid "Google Analytics enabled (0 or 1). Default is 1."
+msgstr ""
+
+msgid "Best price: "
+msgstr ""
+
+msgid "Show the Best Price icon (0 or 1). Default is 1."
+msgstr ""
+
+msgid "Bids: "
+msgstr ""
+
+msgid "Show the Bids Icon (0 or 1). Default is 1."
+msgstr ""
+
+msgid "Layout: "
+msgstr ""
+
+msgid "Use a specific theme (optional)."
+msgstr ""
+
+msgid "CSS: "
+msgstr ""
+
+msgid "Inline css to fully customize the widget (optional). Example: css=\"a {font-size: 100px}\""
+msgstr ""
+
+msgid "Update Options"
+msgstr ""
+
+msgid "Lodging code cannot be blank and must be valid."
+msgstr ""
+
+msgid "The widget is installed but not configured."
+msgstr ""
