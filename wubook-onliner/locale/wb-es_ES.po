@@ -1,0 +1,138 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WuBook Onliner Widget\n"
+"Report-Msgid-Bugs-To: steel@wubook.net\n"
+"POT-Creation-Date: 2013-08-13\n"
+"Last-Translator: Eugenio Palumbo <www.itasolution.it>\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+
+msgid "WuBook Settings"
+msgstr "Configuraciones WuBook"
+
+msgid "You do not have sufficient permissions to access this page."
+msgstr "No tienes suficientes permisos para acceder a esta página"
+
+msgid "Lodging code is not valid!"
+msgstr "¡El código del establecimiento no es válido!"
+
+msgid "Width value is not valid!"
+msgstr "¡El valor de Ancho no es válido!"
+
+msgid "Height value is not valid!"
+msgstr "¡El valor de Altura no es válido!"
+
+msgid "WuBook Online Reception Settings"
+msgstr "Configuraciones del Motor de Reservas Online de WuBook"
+
+msgid "Lodging code: "
+msgstr "Código Establecimiento"
+
+msgid "You can retreive it in the WuBook extranet panel."
+msgstr "Puedes descargarlo en el panel de control de la extranet de WuBook"
+
+msgid "Width: "
+msgstr "Ancho"
+
+msgid "The width of the widget (integer). Default value is 200."
+msgstr "El ancho del widget (integer). El valor por defecto es 200."
+
+msgid "Height: "
+msgstr "Alto"
+
+msgid "The heigth of the widget (integer). Default value is auto."
+msgstr "La altura del widget (integer). El valor por defecto es auto."
+
+msgid "e-Mail: "
+msgstr "Email:"
+
+msgid "Show the feedback form in the widget (0 or 1). Default is 1."
+msgstr "Mostrar el formulario de los FeedBacks en el widget (0 o 1). El valor por defecto es 1."
+
+msgid "Cancellation: "
+msgstr "Cancelación"
+
+msgid "Show the cancellation form in the widget (0 or 1). Default is 1."
+msgstr "MOstrar el formulario de cancelación en el widget (0 o 1). El valor por defecto es 1."
+
+msgid "Language: "
+msgstr "Idioma"
+
+msgid "Autodetect"
+msgstr "Autodetectar"
+
+msgid "The language, no param means auto-detect."
+msgstr "El idioma, no param significa auto-detect."
+
+msgid "Dates: "
+msgstr "Fechas"
+
+msgid "Dates selection (dates selection is not mandatory to open Online Reception), 0 or 1. Default is 1."
+msgstr "Seleccionar fechas (la selección de fechas no es obligatoria para abrir el Motor de Reservas), 0 o 1. Por defecto es 1."
+
+msgid "Failback language: "
+msgstr "Idioma de Failback:"
+
+msgid "Just in case language is not specified and server cannot detect the language: this language will be used."
+msgstr "Solo en el caso de que el idioma no esté seleccionado y el servidor no pueda detectar el idioma: se usará este idioma."
+
+msgid "Background color: "
+msgstr "Color de fondo"
+
+msgid "Background color. Default is #E7F2E7."
+msgstr "Color de fondo. Por defecto el valor es #E7F2E7"
+
+msgid "Font color: "
+msgstr "Color del Font"
+
+msgid "The fonts color. Default is #003D18."
+msgstr "El color de los fonts. Por defecto es #003D18."
+
+msgid "Cards: "
+msgstr "Tarjetas: "
+
+msgid "Show cards icons (0 or 1). Default is 1."
+msgstr "Mostrar los iconos de las tarjetas (0 o 1). El valor por defecto es 1."
+
+msgid "Google integration: "
+msgstr "Integración Google"
+
+msgid "Google Analytics enabled (0 or 1). Default is 1."
+msgstr "Activar Google Analytics (0 o 1). Por defecto es 1."
+
+msgid "Best price: "
+msgstr "Mejor precio: "
+
+msgid "Show the Best Price icon (0 or 1). Default is 1."
+msgstr "Mostrar el icono de Mejor Precio (0 o 1). Por defecto es 1."
+
+msgid "Bids: "
+msgstr "Bids: "
+
+msgid "Show the Bids Icon (0 or 1). Default is 1."
+msgstr "Mostrar el icono de los Bids (0 o 1). Por defecto es 1."
+
+msgid "Layout: "
+msgstr "Layout: "
+
+msgid "Use a specific theme (optional)."
+msgstr "Usar un tema especifico (opcional)."
+
+msgid "CSS: "
+msgstr "CSS"
+
+msgid "Inline css to fully customize the widget (optional). Example: css=\"a {font-size: 100px}\""
+msgstr "CSS inline para personalizar totalmente el widget (opcional). Ejemplo: css=\"a {font-size: 100px}\""
+
+msgid "Update Options"
+msgstr "Actualizar Opciones"
+
+msgid "Lodging code cannot be blank and must be valid."
+msgstr "El código del establecimiento tiene que ser válido."
+
+msgid "The widget is installed but not configured."
+msgstr "El widget está instalado pero no configurado."
+
