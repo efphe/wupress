@@ -279,11 +279,27 @@ function wubook_settings() {
 		<tr>
 		    <td><?php _e("Layout: ", 'wb' ); ?></td>
 		    <td>
-			<?php $selected = 'selected="selected"';?>
+			<?php $selected = ' selected="selected"';?>
 			<select name="wu_layout">
-			    <option value="" <?php if($wu_layout == ''){ echo $selected;}?>>Default</option>
-			    <option value="residencemoika" <?php if($wu_layout == 'residencemoika'){ echo $selected;}?>>residencemoika</option>
-			    <option value="zak" <?php if($wu_layout == 'zak'){ echo $selected;}?>>zak</option>
+			    <option value=""<?php if($wu_layout == ''){ echo $selected;}?>>Default</option>
+			    <option value="atlantic"<?php if($wu_layout == 'atlantic'){ echo $selected;}?>>atlantic</option>
+			    <option value="aventinn"<?php if($wu_layout == 'aventinn'){ echo $selected;}?>>aventinn</option>
+			    <option value="demetra"<?php if($wu_layout == 'demetra'){ echo $selected;}?>>demetra</option>
+			    <option value="dianapalace"<?php if($wu_layout == 'dianapalace'){ echo $selected;}?>>dianapalace</option>
+			    <option value="dostoevsky"<?php if($wu_layout == 'dostoevsky'){ echo $selected;}?>>dostoevsky</option>
+			    <option value="hotelpeople"<?php if($wu_layout == 'hotelpeople'){ echo $selected;}?>>hotelpeople</option>
+			    <option value="nautilusinn"<?php if($wu_layout == 'nautilusinn'){ echo $selected;}?>>nautilusinn</option>
+			    <option value="octaviana"<?php if($wu_layout == 'octaviana'){ echo $selected;}?>>octaviana</option>
+			    <option value="orangewhite"<?php if($wu_layout == 'orangewhite'){ echo $selected;}?>>orangewhite</option>
+			    <option value="purple"<?php if($wu_layout == 'purple'){ echo $selected;}?>>purple</option>
+			    <option value="residencemoika"<?php if($wu_layout == 'residencemoika'){ echo $selected;}?>>residencemoika</option>
+			    <option value="serious"<?php if($wu_layout == 'serious'){ echo $selected;}?>>serious</option>
+			    <option value="shelfort"<?php if($wu_layout == 'shelfort'){ echo $selected;}?>>shelfort</option>
+			    <option value="wcdonald"<?php if($wu_layout == 'wcdonald'){ echo $selected;}?>>wcdonald</option>
+			    <option value="wubook"<?php if($wu_layout == 'wubook'){ echo $selected;}?>>wubook</option>
+			    <option value="wugle"<?php if($wu_layout == 'wugle'){ echo $selected;}?>>wugle</option>
+			    <option value="zak"<?php if($wu_layout == 'zak'){ echo $selected;}?>>zak</option>
+			    <option value="zizi"<?php if($wu_layout == 'zizi'){ echo $selected;}?>>zizi</option>
 			</select>
 		    </td>
 		</tr>
@@ -440,6 +456,8 @@ $wbgenerato  = get_option('wu_widget_mask');
 if($wbgenerato == false || $wbgenerato == '' || $iframe == false || $iframe == '' || (time() - $iframe_date) > 2592000) {
     update_option('wu_iframe_data', time());
     $ch = curl_init();
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_URL, 'https://wubook.net/wbkd/xwidget/gen.html');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POST, true);
@@ -459,6 +477,8 @@ if($wbgenerato == false || $wbgenerato == '' || $iframe == false || $iframe == '
     update_option('wu_iframe_mask', $output);
 
     $ch = curl_init();
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_URL, 'https://wubook.net/wbkd/xwidget/gen.html');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POST, true);
