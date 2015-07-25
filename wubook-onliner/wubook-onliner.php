@@ -5,7 +5,7 @@
  * Description: Show the widget for reservation and open the online reception. To see how it works take a look at the <a href="https://sites.google.com/site/wubookdocs/online-booking/online-booking-for-wordpress" target="blank">documentation page</a>.
  * Version: 2.0.1
  * Author: Eugenio Palumbo (aka Steel)
- * Author URI: http://www.itasolution.it/?ref=wb
+ * Author URI: http://www.itasolution.it/
  * License: BSD
  * License owner: WuBook Srl, http://wubook.net/
  */
@@ -22,52 +22,57 @@ function reception_menu() {
 
 function wubook_settings() {
     if (!current_user_can('manage_options'))  {
-	wp_die( __('You do not have sufficient permissions to access this page.', 'wb') );
+        wp_die( __('You do not have sufficient permissions to access this page.', 'wb') );
     }
 
     $couldI = @$_POST['oscimp_hidden'];
     if($couldI == 'Y') {
-	//Form data sent
-	$wu_lcode = @$_POST['wu_lcode'];
-	$wu_width = @$_POST['wu_width'];
-	$wu_height = @$_POST['wu_height'];
-	$wu_email = @$_POST['wu_email'];
-	$wu_cancel = @$_POST['wu_cancel'];
-	$wu_lang = @$_POST['wu_lang'];
-	$wu_dates = @$_POST['wu_dates'];
-	$wu_failback_lang = @$_POST['wu_failback_lang'];
-	$wu_bgcolor = @$_POST['wu_bgcolor'];
-	$wu_textcolor = @$_POST['wu_textcolor'];
-	$wu_cards = @$_POST['wu_cards'];
-	$wu_wbgoogle = @$_POST['wu_wbgoogle'];
-	$wu_bestprice = @$_POST['wu_bestprice'];
-	$wu_bids = @$_POST['wu_bids'];
-	$wu_layout = @$_POST['wu_layout'];
-	$wu_css = @$_POST['wu_css'];
+        //Form data sent
+        $wu_lcode = @$_POST['wu_lcode'];
+        $wu_width = @$_POST['wu_width'];
+        $wu_bgcolor = @$_POST['wu_bgcolor'];
+        $wu_textcolor = @$_POST['wu_textcolor'];
+        $wu_layout = @$_POST['wu_layout'];
+        $wu_lang = @$_POST['wu_lang'];
+        $wu_failback_lang = @$_POST['wu_failback_lang'];
+#        $wu_discount_code = @$_POST['wu_discount_code'];
+        $wu_dates = @$_POST['wu_dates'];
+#        $wu_nights = @$_POST['wu_nights'];
+#        $wu_occupancy = @$_POST['wu_occupancy'];
+        $wu_cancel = @$_POST['wu_cancel'];
+        $wu_email = @$_POST['wu_email'];
+        $wu_cards = @$_POST['wu_cards'];
+        $wu_bids = @$_POST['wu_bids'];
+        $wu_bestprice = @$_POST['wu_bestprice'];
+        $wu_wbgoogle = @$_POST['wu_wbgoogle'];
+        $wu_mobile = @$_POST['wu_mobile'];
+        $wu_height = @$_POST['wu_height']; #
+        $wu_css = @$_POST['wu_css'];
 
-	if(!is_numeric($wu_lcode)) $wu_lcode_error = '<span style="color:#e50000">' . __('Lodging code is not valid!') . '</span>';
-	if(!is_numeric($wu_width)) $wu_width_error = '<span style="color:#e50000">' . __('Width value is not valid!') . '</span>';
-	if(!is_numeric($wu_height) && $wu_height != 'auto') $wu_height_error = '<span style="color:#e50000">' . __('Height value is not valid!') . '</span>';
+        if(!is_numeric($wu_lcode)) $wu_lcode_error = '<span style="color:#e50000">' . __('Lodging code is not valid!') . '</span>';
+        if(!is_numeric($wu_width)) $wu_width_error = '<span style="color:#e50000">' . __('Width value is not valid!') . '</span>';
+        if(!is_numeric($wu_height) && $wu_height != 'auto') $wu_height_error = '<span style="color:#e50000">' . __('Height value is not valid!') . '</span>';
 
-	update_option('wu_lcode', strip_tags($wu_lcode));
-	update_option('wu_width', strip_tags($wu_width));
-	update_option('wu_height', strip_tags($wu_height));
-	update_option('wu_email', strip_tags($wu_email));
-	update_option('wu_cancel', strip_tags($wu_cancel));
-	update_option('wu_lang', strip_tags($wu_lang));
-	update_option('wu_dates', strip_tags($wu_dates));
-	update_option('wu_failback_lang', strip_tags($wu_failback_lang));
-	update_option('wu_bgcolor', strip_tags($wu_bgcolor));
-	update_option('wu_textcolor', strip_tags($wu_textcolor));
-	update_option('wu_cards', strip_tags($wu_cards));
-	update_option('wu_wbgoogle', strip_tags($wu_wbgoogle));
-	update_option('wu_bestprice', strip_tags($wu_bestprice));
-	update_option('wu_bids', strip_tags($wu_bids));
-	update_option('wu_layout', strip_tags($wu_layout));
-	update_option('wu_css', strip_tags($wu_css));
-	update_option('wu_iframe_data', 0);
+        update_option('wu_lcode', strip_tags($wu_lcode));
+        update_option('wu_width', strip_tags($wu_width));
+        update_option('wu_height', strip_tags($wu_height));
+        update_option('wu_email', strip_tags($wu_email));
+        update_option('wu_cancel', strip_tags($wu_cancel));
+        update_option('wu_lang', strip_tags($wu_lang));
+        update_option('wu_dates', strip_tags($wu_dates));
+        update_option('wu_failback_lang', strip_tags($wu_failback_lang));
+        update_option('wu_bgcolor', strip_tags($wu_bgcolor));
+        update_option('wu_textcolor', strip_tags($wu_textcolor));
+        update_option('wu_cards', strip_tags($wu_cards));
+        update_option('wu_mobile', strip_tags($wu_mobile));
+        update_option('wu_wbgoogle', strip_tags($wu_wbgoogle));
+        update_option('wu_bestprice', strip_tags($wu_bestprice));
+        update_option('wu_bids', strip_tags($wu_bids));
+        update_option('wu_layout', strip_tags($wu_layout));
+        update_option('wu_css', strip_tags($wu_css));
+        update_option('wu_iframe_data', 0);
 
-	$updated = '<div class="update-nag" style="width:400px;">I dati sono stati aggiornati.</div>';
+        $updated = '<div class="update-nag" style="width:400px;">I dati sono stati aggiornati.</div>';
     }
     ////////////////// Normal page view
     else {
@@ -82,6 +87,7 @@ function wubook_settings() {
 	$wu_bgcolor = get_option('wu_bgcolor');
 	$wu_textcolor = get_option('wu_textcolor');
 	$wu_cards = get_option('wu_cards');
+    $wu_mobile = get_option('wu_mobile');
 	$wu_wbgoogle = get_option('wu_wbgoogle');
 	$wu_bestprice = get_option('wu_bestprice');
 	$wu_bids = get_option('wu_bids');
@@ -239,6 +245,18 @@ function wubook_settings() {
 		<tr>
 		    <td colspan="2"><?php _e("Show cards icons (0 or 1). Default is 1.", 'wb' ); ?><br/><br/></td>
 		</tr>
+
+        <tr>
+            <td><?php _e("Iframe in a new window: ", 'wb' ); ?></td>
+            <td>
+            <?php $checked = 'checked="checked"';?>
+            <input type="radio" name="wu_mobile" value="0" <?php if($wu_mobile == '0'){ echo $checked;}?>> False
+            <input type="radio" name="wu_mobile" value="1" <?php if($wu_mobile == '1' || $wu_mobile == ''){ echo $checked;}?>> True
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><?php _e("Open the online reception in a new window in mobile version (0 or 1). Default is 0.", 'wb' ); ?><br/><br/></td>
+        </tr>
 
 		<tr>
 		    <td><?php _e("Google integration: ", 'wb' ); ?></td>
@@ -456,7 +474,8 @@ if($wbgenerato == false || $wbgenerato == '' || $iframe == false || $iframe == '
 	'sitelang' => substr(WPLANG, 0, 2),
 	'width'    => '#####width#####',
 	'height'   => '#####height#####',
-	'layout'   => get_option('wu_layout')
+	'layout'   => get_option('wu_layout'),
+    'mobile'   => get_option('wu_mobile'),
     );
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
     $output = curl_exec($ch);
